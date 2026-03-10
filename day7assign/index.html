@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Modern Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Create Account</h2>
+
+  <form id="registerForm">
+
+    <div class="input-group">
+      <input type="text" id="name" required>
+      <label>Full Name</label>
+      <small class="error" id="nameError"></small>
+    </div>
+
+    <div class="input-group">
+      <input type="text" id="email" required>
+      <label>Email</label>
+      <small class="error" id="emailError"></small>
+    </div>
+
+    <div class="input-group">
+      <input type="text" id="phone" required>
+      <label>Phone Number</label>
+      <small class="error" id="phoneError"></small>
+    </div>
+
+    <div class="input-group password-box">
+      <input type="password" id="password" required>
+      <label>Password</label>
+      <span id="togglePassword">👁</span>
+      <small class="error" id="passwordError"></small>
+    </div>
+
+    <div class="strength-container">
+      <div id="strengthBar"></div>
+    </div>
+
+    <button type="submit">Register</button>
+
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
